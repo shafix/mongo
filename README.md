@@ -8,3 +8,8 @@ db.getCollection('XXXX').find({ _id : "XXXXXXX" }).forEach(function(obj) {
     db.getCollection('XXXXX').save(obj);
 });
 ```
+
+## Update a field of a document
+```js
+db.getCollection('XXX').updateOne({ _id : "XXX" }, { $set: { "applicant.firstName" : "BLA BLA BLA" } } );
+```
